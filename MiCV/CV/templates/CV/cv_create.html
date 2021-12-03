@@ -1,0 +1,22 @@
+{% extends 'CV/base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Crear nuevo CV!</h1>
+    <p>Ingrese sus datos:</p>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% if form.errors %}
+      {{form.errors}}
+      {% endif %}
+      {% for field in form %}
+        <div class="mb-3">
+          <label for="{{field.name}}" class="form-label">{{field.label}}</label>
+          {{field}}
+        </div>
+      
+      {% endfor %}
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+  </div>
+{% endblock %}

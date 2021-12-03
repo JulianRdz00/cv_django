@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    background-color: lightgray;
+    margin-left: 480px;
+    margin-right: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fondo {
+    background-color: white;
+    height: 1000px;
+    width: 1000px;
+    border: solid 2px gray;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+    color: slategrey ;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.row {
+    background: url(https://img.freepik.com/foto-gratis/textura-carton-amarillo_95678-83.jpg?size=626&ext=jpg);
+    height: 35px;
+    width: 99%;
+    border: solid 1px white;
+    margin-left: 1px;
+}
+
+.col {
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+}
+
+.col_email {
+    height: 30px;
+    width: 50%;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: slategrey;
+}
+
+.card_perfil {
+    float: left;
+    background: url(https://img.freepik.com/foto-gratis/textura-carton-amarillo_95678-83.jpg?size=626&ext=jpg);
+    height: 125px;
+    width: 97%;
+    border: solid 1px white;
+    margin-left: 10px;
+}
+
+.card_perfil-body {
+    text-align: center;
+
+}
+
+.card_left {
+    float: left;
+    background: url(https://img.freepik.com/foto-gratis/textura-carton-amarillo_95678-83.jpg?size=626&ext=jpg);
+    height: 150px;
+    width: 48%;
+    border: solid 1px white;
+    margin: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.card_right {
+    float: left;
+    background: url(https://img.freepik.com/foto-gratis/textura-carton-amarillo_95678-83.jpg?size=626&ext=jpg);
+    height: 150px;
+    width: 48%;
+    border: solid 1px white;
+    margin: 8px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.card-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+}
+
+.card_obj-text {
+    padding: -15px;
+}
+
+.card_academ-title {
+}
+
+.card_academ-text {
+}
+
+.card_hobbies {
+    background: url(https://img.freepik.com/foto-gratis/textura-carton-amarillo_95678-83.jpg?size=626&ext=jpg);
+    float: left;
+    width: 98%;
+    height: 60px;
+    margin-left: 7px ;
+    margin-top: 20px;
+}
+
+.card_hobbies-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card_hobbies-text {
+    text-align: center;
+
+}
+
+.row_end {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+
+}
+
+.card-2 {
+    float: left;
+    height: 100%;
+    width: 300px;
+    background-color: #1B1B1B;
+}
+
+.card-text-2 {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 17px;
+    color: white;
+
+}
+
+.card-title-2 {
+    margin-top: 15px;
+    color: white;
+}
+
+.card-text-2-email {
+    margin-bottom: 60px;
+    color: white;
+}
+
+.card_perfil-2 {
+    float: right;
+    padding-right: 75px;
+    height: 328px;
+    width: 696px;
+    background-color: #1B1B1B;
+
+}
+
+.card_perfil-text-2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+.card_obj-2 {
+    float: right;
+    margin-right: 75px;
+    margin-bottom: 75px;
+    margin-top: 75px;
+    height: 50px;
+    width: 550px;
+    background-color: #1B1B1B;
+}
+
+.card_obj-text-2 {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.card_exp-2 {
+    float: right;
+    margin-right: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 50px;
+    width: 550px;
+    background-color: #1B1B1B;
+}
+
+.card_exp-text-2 {
+    margin-left: 8px;
+    font-size: 20px;
+
+}
+
+.card_hobbies-2 {
+    float: right;
+    margin-right: 75px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 50px;
+    width: 550px;
+    background-color: #1B1B1B;
+}
+
+.card_hobbies-text-2 {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.card-header {
+    color: white;
+}

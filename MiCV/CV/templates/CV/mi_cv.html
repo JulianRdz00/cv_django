@@ -1,0 +1,67 @@
+{% extends 'CV/base.html' %}
+{% load static %}
+
+
+   
+{% block content %}
+{% for curriculum in curriculums %}
+
+<div class="fondo">
+   <img src="{{curriculum.foto.url}}" class="rounded mx-auto d-block" alt="" height="200px" width="200px">   
+   <h2> {{curriculum.nombre}} </h2>
+   <div class="container">
+     <div class="row">
+       <div class="col">
+         <i class="fas fa-calendar-alt"></i>: {{curriculum.nacimiento}}
+       </div>
+       <div class="col">
+         <i class="fas fa-mobile-alt"></i>: {{curriculum.celular}}
+       </div>
+       <div class="col_email">
+         <i class="far fa-envelope"></i>: {{curriculum.email}}
+       </div>
+     </div>
+   </div>
+   <h3>Perfil</h3>
+   <div class="card_perfil">
+     <div class="card_perfil-body">
+         {{curriculum.perfil}}     
+      </div>
+   </div>
+   <div class="card_left">
+     <div class="card-header">Conocimientos</div>
+     <div class="card-body">
+         <p class="card-text">{{curriculum.conocimientos}}</p>
+     </div>
+   </div>
+   <div class="card_left">
+     <div class="card-header">Experiencia Laboral</div>
+     <div class="card-body">
+         <p class="card-text">{{curriculum.experiencia_laboral}}</p>
+     </div>
+   </div>
+   <div class="card_right">
+     <div class="card-header">Objetivos</div>
+     <div class="card-body">
+         <p class="card_obj-text">{{curriculum.objetivos}}</p>
+     </div>
+   </div>
+   <div class="card_right">
+     <div class="card-header">Formación Académica</div>
+     <div class="card-body">
+         <h5 class="card_academ-title">{{curriculum.formacion_académica}}</h5>
+         <p class="card_academ-text">{{curriculum.carrera_e_institucion}}
+         {{curriculum.año_en_curso}}</p>
+     </div>
+   </div>
+   <div class="card_hobbies">
+     <div class="card_hobbies-header">Hobbies</div>
+     <div class="card_hobbies-body">
+         <p class="card_hobbies-text">{{curriculum.hobbies}}</p>
+   </div>
+
+   <div class="row_end"></div>
+</div>
+{% endfor %}
+{% endblock %}
+

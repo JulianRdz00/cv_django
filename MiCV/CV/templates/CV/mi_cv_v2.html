@@ -1,0 +1,49 @@
+{% extends 'CV/base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+{% for curriculum in curriculums %}
+
+<div class="fondo">
+	<div class="card-2">
+		<img src="{{curriculum.foto.url}}" class="rounded mx-auto d-block" alt="" height="280px" width="280px">
+		<div class="card-header">Datos Personales</div>
+     	<div class="card-body">
+     		<h5 class="card-title-2">{{curriculum.nombre}}</h5>
+		    <p class="card-text-2"><i class="fas fa-calendar-alt"></i>  {{curriculum.nacimiento}}</p>
+		    <p class="card-text-2"><i class="fas fa-mobile-alt"></i>  {{curriculum.celular}}</p>
+			<p class="card-text-2-email"><i class="far fa-envelope"></i>  {{curriculum.email}}</p>
+		</div>
+		<div class="card-header"><i class="fas fa-book"></i>  Formación Académica</div>
+		<div class="card-body">
+			<h5 class="card-title-2">{{curriculum.formacion_académica}}</h5>
+			<p class="card-text-2"> {{curriculum.carrera_e_institucion}}</p>
+			<p class="card-text-2"> {{curriculum.año_en_curso}}</p>
+		</div>
+		<div class="card-header"><i class="fas fa-book-reader"></i> Conocimientos</div>
+		<div class="card-body">
+			<p class="card-text-2">{{curriculum.conocimientos}}</p>
+		</div>
+	</div>
+	<div class="card_perfil-2">
+		<div class="card-header"><i class="fas fa-user"></i> Perfil</div>
+		<p class="card_perfil-text-2">{{curriculum.perfil}}</p>
+	</div>
+	<div class="card_obj-2">
+		<div class="card-header"><i class="fas fa-flag-checkered"></i> Objetivos</div>
+		<p class="card_obj-text-2">{{curriculum.objetivos}}</p>
+	</div>
+	<div class="card_exp-2">
+		<div class="card-header"><i class="fas fa-toolbox"></i> Experiencia Laboral</div>
+		<p class="card_exp-text-2">{{curriculum.experiencia_laboral}}</p>
+	</div>
+	<div class="card_hobbies-2">
+		<div class="card-header"><i class="fas fa-guitar"></i> Hobbies</div>
+		<p class="card_hobbies-text-2">{{curriculum.hobbies}}</p>
+	</div>
+</div>
+
+{% endfor %}
+{% endblock %}
